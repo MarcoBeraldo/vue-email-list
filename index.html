@@ -28,7 +28,9 @@
 </head>
 
 <body>
-<ul id="root"></ul>
+<ul id="root">
+    <li v-if="mailList.length === 10" v-for="(mail,i) in mailList">{{ mail }}</li>
+</ul>
 
 
 
